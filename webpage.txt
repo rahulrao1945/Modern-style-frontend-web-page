@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width:100%;
+            background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(hacker.jpg);
+            background-position: center;
+            background-size: cover;
+            height:109vh;
+        }
+        .navbar{
+            height:75px;
+            width:1200px;
+            margin:auto;
+        }
+        .icon{
+            width:100px;
+            height:75px;
+            float:left;
+        }
+        .logo{
+            color:aliceblue;
+            font-size: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            float:left;
+            padding-left:20px;
+
+            padding-top: 10px;
+            text-align:center;
+            margin-left: -100px;
+        }
+        .Menu{
+            font-size:60px;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: aqua;
+            font-size: 22px;
+            transition: all 0.3s ease;
+            background-color: rgb(15, 170, 170);
+            color: white;
+            font-weight: bold;
+        }
+        a{
+            color:rgb(43, 182, 173);
+            margin:20px;
+            text-decoration:none;
+            font-size:20px;
+            
+            
+        }
+        a:hover{
+            background-color: rgb(213, 109, 13);
+        }
+        h2{
+            text-align:center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+    @keyframes fadeIn{
+        from{
+        opacity:0;
+        transform:translateY(-00px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+        }
+        /* .search{
+            /* width:200px;
+            top: 70px;
+            display: flex;
+            left: 900px; */
+        .search{
+            width:200px;
+            justify-content: center;
+            display: flex;
+            float: left;
+            margin-top: -480px;
+            margin-left: 900px;
+
+        }
+        .srch{
+            font-family: 'Times New Roman';
+            width:200px;
+            height: 20px;
+            background:transparent;
+            background-color: rgb(221, 231, 231);
+            border-color: brown;
+            border: 1px;
+            border-radius:20px;
+            border-color: rgb(202, 19, 19);
+            margin-left:-100px;
+            color:aliceblue;
+            border-right:none;
+            font-size:16px;
+            float:left;
+            padding:10px;
+            margin-top: -50px;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            font-size: 20px;
+            border: 2px solid rgb(240, 12, 12);
+            border-radius: 20px;
+            margin-top: -50px;
+            margin-left: -30px;
+        }
+        input{
+            font-size: 17px;
+            border-radius: 2px;
+            border: 1px solid rgb(237, 13, 20);
+            height: 20px;
+            width: 200px;
+        }
+        .container{
+            background:linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(4,0,0,0.8)50%),url(photo.jpg);
+            background-position:center;
+            background-size:cover;
+            position:absolute;
+            height:250px;
+            width: 350px;
+            top:200px;
+            left:1100px;
+            border-radius:15px;
+            padding:25px;
+        }
+        .container h2{
+            width:220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: orange;
+            font-size: 22px;
+            background-color: azure;
+            border-radius: 100px;
+            margin:2px;
+            padding:8px;
+        }
+        .container input{
+            width:240px;
+            height:35px;
+            background: transparent;
+            border-bottom: 1px solid orange;
+            border-top: none;
+            border-left:none;
+            color: aliceblue;
+            font-size:15px;
+            
+        }
+        .btn{
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius:15px;
+            
+        }
+        .link{
+            color:aliceblue
+        }
+        .start-btn{
+    margin-top:20px;
+    width:180px;
+    height:50px;
+    border:none;
+    border-radius:25px;
+    background:orangered;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+    </style>
+</head>
+<body>
+    <div class = "main">
+        <div class = "navbar">
+            <div class = "icon">
+            <!-- <h2 class = "logo">My Web</h2> -->
+             <div class = "logo"><h2>Welcome to My Web</h2></div>
+                <div class = "Menu">
+                    <a href = "#">Home</a>
+                    <a href = "#">About</a>
+                    <a href = "#">Contact</a>
+                    <a href = "#">Help</a>
+                    <a href = "#">Bussiness</a>
+                </div>
+                <div class = "search">
+                    <input class = "srch" type = "text" placeholder = "enter your text here">
+                    <button class = "button">search</button>
+                </div>
+                <div class = "container">
+                    <h2>Login Here</h2>
+                    <input type = "email" name = "email" class=" hello" placeholder="Enter your email" style = "background-color: rgba(137, 54, 135, 0.827);">
+                    <input type = "pass" name = "" placeholder="Enter your password" style = "background-color: rgba(137, 54, 139, 0.827);">
+                    <button class="btn" style = "margin:20px;"><a href="#">Login</a></button>
+            
+                    <p class="link">Don't have an account</p><br>
+                    <a href="#">Sign up here</a>
+                    <p class = "liw">Login in with</p>
+                    <button class="start-btn">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
